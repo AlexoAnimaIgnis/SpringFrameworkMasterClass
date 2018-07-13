@@ -31,3 +31,14 @@ Searching the package for any classes
 2018-07-13 15:42:41.867 DEBUG 70556 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'bubbleSortAlgorithm'
 2018-07-13 15:42:41.868 DEBUG 70556 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : Autowiring by type from bean name 'binarySearchImpl' to bean named 'bubbleSortAlgorithm'
 2018-07-13 15:42:41.868 DEBUG 70556 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'binarySearchImpl'
+
+
+****Then Spring will autowire the dependencies through setter injection OR NO SETTER OR NO CONSTRUCTOR
+2018-07-13 17:33:32.429 DEBUG 73760 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'bubbleSortAlgorithm'
+2018-07-13 17:33:32.429 DEBUG 73760 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : Autowiring by type from bean name 'binarySearchImpl' to bean named 'bubbleSortAlgorithm'
+2018-07-13 17:33:32.429 DEBUG 73760 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'binarySearchImpl'
+
+
+****How do you know when to use a constructor injection or setter injection 
+Mandatory dependencies - CONSTRUCTOR INJECTION
+Optional dependencies - SETTER INJECTION
