@@ -1,7 +1,12 @@
 package com.alexo.springframework.springframework;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component // tells spring that its a bean
 public class BinarySearchImpl {
 
+    @Autowired // tells spring that its a dependency of this class
     private SortAlgorithm sortAlgorithm;
 
     public BinarySearchImpl(SortAlgorithm sortAlgorithm){
