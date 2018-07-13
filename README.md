@@ -42,3 +42,13 @@ Searching the package for any classes
 ****How do you know when to use a constructor injection or setter injection 
 Mandatory dependencies - CONSTRUCTOR INJECTION
 Optional dependencies - SETTER INJECTION
+
+
+****SPRING MODULES
+Spring is built in a modular way which lets you use one spring module without using other module.
+- Core container i.e beans, core, context
+- Data access/integration ie jdbc, orm, oxm, jms
+- Web ie. websocket, web, servlet, portlet
+- Cross-cutting stuff (applicable to more than one layer)
+-- Test, 
+- Spring AOP, Aspects, Instrumentation, Messaging
