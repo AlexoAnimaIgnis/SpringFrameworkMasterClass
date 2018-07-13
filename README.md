@@ -52,3 +52,13 @@ Spring is built in a modular way which lets you use one spring module without us
 - Cross-cutting stuff (applicable to more than one layer)
 -- Test, 
 - Spring AOP, Aspects, Instrumentation, Messaging
+
+****SPRING PROJECTS
+Spring projects provides solutions for different problems faced by enterprise applications
+- Spring Boot framework to develop microservices. Makes very easy to develop web application
+- Spring Cloud build cloud native applications
+- Spring Data provides consistent data access
+- Spring Integration addresses problem with application enterprise integration. helps us connecting application
+- Spring Batch for batch applications. Enables developing batch applications
+- Spring Security provide security applications. Provides solution in providing security 
+- Spring HATEOAS enables you to develop hateos compatible application.
