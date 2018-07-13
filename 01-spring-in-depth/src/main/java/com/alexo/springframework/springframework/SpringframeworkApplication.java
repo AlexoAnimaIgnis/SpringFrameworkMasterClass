@@ -10,6 +10,8 @@ public class SpringframeworkApplication {
 	//what are the beans?
 	//what are the dependencies of a bean?
 	//where to search for beans? => no need as springbootapplication annotation uses the package of the class
+	//spring starts with @ComponentScan
+
 	public static void main(String[] args) {
 
 		//BinarySearchImpl binarySearch = new BinarySearchImpl(new BubbleSortAlgorithm());
