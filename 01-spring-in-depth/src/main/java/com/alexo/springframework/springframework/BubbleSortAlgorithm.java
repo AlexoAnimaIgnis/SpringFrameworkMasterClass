@@ -1,6 +1,6 @@
 package com.alexo.springframework.springframework;
 
-public class BubbleSortAlgorithm {
+public class BubbleSortAlgorithm implements SortAlgorithm{
 
     public int[] sort(int[] numbers) {
         return numbers;
