@@ -62,3 +62,9 @@ Spring projects provides solutions for different problems faced by enterprise ap
 - Spring Batch for batch applications. Enables developing batch applications
 - Spring Security provide security applications. Provides solution in providing security 
 - Spring HATEOAS enables you to develop hateos compatible application.
+
+****WHY IS SPRING POPULAR
+1. Enables testable code. Core feature of Spring is dependency injection
+2. No plumbing of code. (Unnecessary code)
+3. Flexible Architecture
+4. Staying current. (microservices)
