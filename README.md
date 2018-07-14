@@ -71,3 +71,11 @@ Spring projects provides solutions for different problems faced by enterprise ap
 
 ****QUALIFIER OR PRIMARY
 Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+****BEAN SCOPE
+DEFAULT - SINGLETOn
+
+singleton - one instance of bean per Spring Context
+prototype - new bean whenever requested
+request - one bean per HTTP request
+session - one bean per HTTP session

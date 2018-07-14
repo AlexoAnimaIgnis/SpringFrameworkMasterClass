@@ -2,9 +2,13 @@ package com.alexo.springframework.springframework;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component // tells spring that its a bean
+//@Scope("prototype") // default is singleton
+@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class BinarySearchImpl {
 
     @Autowired // tells spring that its a dependency of this class

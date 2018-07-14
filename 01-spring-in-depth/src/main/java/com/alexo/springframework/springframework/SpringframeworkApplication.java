@@ -19,6 +19,10 @@ public class SpringframeworkApplication {
 		// ApplicationContext will managed all the bean
 		ApplicationContext applicationContext = SpringApplication.run(SpringframeworkApplication.class, args);
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
+		BinarySearchImpl binarySearch1 = applicationContext.getBean(BinarySearchImpl.class);
+
+		System.out.println(binarySearch);
+		System.out.println(binarySearch1);
 		int result = binarySearch.binarySearch(new int[]{12, 4, 6}, 3);
 
 		System.out.println(result);
