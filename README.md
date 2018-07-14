@@ -68,3 +68,6 @@ Spring projects provides solutions for different problems faced by enterprise ap
 2. No plumbing of code. (Unnecessary code)
 3. Flexible Architecture
 4. Staying current. (microservices)
+
+****QUALIFIER OR PRIMARY
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed

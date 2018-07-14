@@ -1,30 +1,30 @@
 package com.alexo.springframework.springframework;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component // tells spring that its a bean
 public class BinarySearchImpl {
 
     @Autowired // tells spring that its a dependency of this class
-    private SortAlgorithm quickSortAlgorithm; // autowire by name meaning specifying the class name
+    @Qualifier("bubbles")
+    private SortAlgorithm sortAlgorithm; // autowire by name meaning specifying the class name
 
     /** setter injection
-    public void setSortAlgorithm(SortAlgorithm quickSortAlgorithm) {
-        this.quickSortAlgorithm = quickSortAlgorithm;
+    public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
+        this.sortAlgorithm = sortAlgorithm;
     }*/
 
-    /** example of constructor injection */
-    public BinarySearchImpl(SortAlgorithm quickSortAlgorithm){
+    /** example of constructor injection
+    public BinarySearchImpl(SortAlgorithm sortAlgorithm){
         super();
-        this.quickSortAlgorithm = quickSortAlgorithm;
-    }
-
-
+        this.sortAlgorithm = sortAlgorithm;
+    }*/
 
     public int binarySearch(int[] numbers, int numberToSearchFor) {
-        int[] sortedNumbers = this.quickSortAlgorithm.sort(numbers);
-        System.out.println(this.quickSortAlgorithm);
+        int[] sortedNumbers = this.sortAlgorithm.sort(numbers);
+        System.out.println(this.sortAlgorithm);
         return 3;
     }
 }
