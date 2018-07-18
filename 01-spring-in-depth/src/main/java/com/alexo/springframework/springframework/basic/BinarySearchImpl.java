@@ -1,4 +1,4 @@
-package com.alexo.springframework.springframework;
+package com.alexo.springframework.springframework.basic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

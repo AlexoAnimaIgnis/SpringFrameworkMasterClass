@@ -1,7 +1,6 @@
-package com.alexo.springframework.springframework;
+package com.alexo.springframework.springframework.basic;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -79,3 +79,8 @@ singleton - one instance of bean per Spring Context
 prototype - new bean whenever requested
 request - one bean per HTTP request
 session - one bean per HTTP session
+
+****COMPLEX SCOPE SCENARIOS
+If two related class has different scope, you can add additional attribute to @Scope
+If youre trying to get a bean and one of its dependency is a prototype you can use proxy on that dependency 
+- proxyMode = ScopeProxyMode.TARGET_CLASS
