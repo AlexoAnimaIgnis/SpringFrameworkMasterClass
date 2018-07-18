@@ -84,3 +84,9 @@ session - one bean per HTTP session
 If two related class has different scope, you can add additional attribute to @Scope
 If youre trying to get a bean and one of its dependency is a prototype you can use proxy on that dependency 
 - proxyMode = ScopeProxyMode.TARGET_CLASS
+
+****DIFFERENCE BETWEEN SPRING SINGLETON and GOF SINGLETON
+Gang of Four definition
+- one instance of bean for the whole JVM
+Spring
+- one instance of bean per application context. (if there are 5 application context in single JVM, if I have spring beans that scope is set to singleton, then I will have 5 instance of that bean.
