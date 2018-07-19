@@ -96,3 +96,11 @@ Spring
 Whenever we say something is a @SpringBootApplication it automatically defines a component scan on the package where the springbootapplication is defined.
 Whenever you encountered a problem about NoSuchBeanDefinedException or of some sort, probably will be on @Component or @ComponentScan, to find the eligible
 bean for Spring to create. Its on you to tell Spring where to find the component through @ComponentScan
+
+
+****Lifecycle of a bean 
+Entire lifecycle of a bean is managed by SPRING IOC container (Spring inversion of control)
+
+1. Dependencies will be autowired (first thing that spring do)
+@PostConstruct // as soon as the bean is created, this post construct will be called. Used on a method that needs to be executed after dependency injection is done to perform any initialization
+@PreDestroy // is called just before the bean is removed, this is used as a callback notification that its in the process of being removed
