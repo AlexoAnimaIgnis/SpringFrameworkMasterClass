@@ -1,4 +1,4 @@
-package com.alexo.springframework.springframework;
+package com.alexo.springframework.basics;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

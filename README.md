@@ -90,3 +90,9 @@ Gang of Four definition
 - one instance of bean for the whole JVM
 Spring
 - one instance of bean per application context. (if there are 5 application context in single JVM, if I have spring beans that scope is set to singleton, then I will have 5 instance of that bean.
+
+
+**** COMPONENT SCAN
+Whenever we say something is a @SpringBootApplication it automatically defines a component scan on the package where the springbootapplication is defined.
+Whenever you encountered a problem about NoSuchBeanDefinedException or of some sort, probably will be on @Component or @ComponentScan, to find the eligible
+bean for Spring to create. Its on you to tell Spring where to find the component through @ComponentScan

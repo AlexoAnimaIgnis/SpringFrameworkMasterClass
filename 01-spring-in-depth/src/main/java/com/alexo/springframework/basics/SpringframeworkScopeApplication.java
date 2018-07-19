@@ -1,7 +1,6 @@
-package com.alexo.springframework.springframework;
+package com.alexo.springframework.basics;
 
-import com.alexo.springframework.springframework.basic.BinarySearchImpl;
-import com.alexo.springframework.springframework.scope.PersonDAO;
+import com.alexo.springframework.basics.scope.PersonDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;

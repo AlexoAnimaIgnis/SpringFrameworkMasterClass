@@ -1,4 +1,4 @@
-package com.alexo.springframework.springframework.scope;
+package com.alexo.springframework.basics.scope;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

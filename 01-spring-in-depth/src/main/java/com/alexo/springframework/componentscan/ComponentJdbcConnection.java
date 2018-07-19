@@ -1,4 +1,4 @@
-package com.alexo.springframework.springframework.scope;
+package com.alexo.springframework.componentscan;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
@@ -9,9 +9,9 @@ import org.springframework.stereotype.Component;
 
 @Scope(value=ConfigurableBeanFactory.SCOPE_PROTOTYPE
         ,proxyMode= ScopedProxyMode.TARGET_CLASS) // to reconcile different scope of related class
-public class JdbcConnection {
+public class ComponentJdbcConnection {
 
-    public JdbcConnection(){
+    public ComponentJdbcConnection(){
         System.out.println("JDBC Connection");
     }
 }

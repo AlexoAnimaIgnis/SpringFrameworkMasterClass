@@ -1,6 +1,6 @@
-package com.alexo.springframework.springframework;
+package com.alexo.springframework.basics;
 
-import com.alexo.springframework.springframework.basic.BinarySearchImpl;
+import com.alexo.springframework.basics.basic.BinarySearchImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

@@ -1,4 +1,4 @@
-package com.alexo.springframework.springframework.basic;
+package com.alexo.springframework.basics.basic;
 
 public interface SortAlgorithm {
     int[] sort(int[] numbers);
