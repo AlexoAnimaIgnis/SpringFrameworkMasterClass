@@ -104,3 +104,12 @@ Entire lifecycle of a bean is managed by SPRING IOC container (Spring inversion 
 1. Dependencies will be autowired (first thing that spring do)
 @PostConstruct // as soon as the bean is created, this post construct will be called. Used on a method that needs to be executed after dependency injection is done to perform any initialization
 @PreDestroy // is called just before the bean is removed, this is used as a callback notification that its in the process of being removed
+
+****CDI (Context Dependency Injection)
+- CDI interface that defines how to do dependency injection
+Spring introduced Dependency Injection and IOC.
+Java EE Dependency Injection Standard
+Spring supports most annotations
+- @Inject(@Autowired in spring)
+- @Named( @Component & @Qualifier in spring)
+- @Singleton (Defines a scope of singleton)
