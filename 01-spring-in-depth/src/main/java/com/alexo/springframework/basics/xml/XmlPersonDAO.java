@@ -2,13 +2,13 @@ package com.alexo.springframework.basics.xml;
 
 public class XmlPersonDAO {
 
-    XmlJdbcConnection xmljdbcConnection;
+    XmlJdbcConnection xmlJdbcConnection;
 
-    public XmlJdbcConnection getXmljdbcConnection() {
-        return xmljdbcConnection;
+    public XmlJdbcConnection getXmlJdbcConnection() {
+        return xmlJdbcConnection;
     }
 
-    public void setXmljdbcConnection(XmlJdbcConnection xmljdbcConnection) {
-        this.xmljdbcConnection = xmljdbcConnection;
+    public void setXmlJdbcConnection(XmlJdbcConnection xmlJdbcConnection) {
+        this.xmlJdbcConnection = xmlJdbcConnection;
     }
 }
