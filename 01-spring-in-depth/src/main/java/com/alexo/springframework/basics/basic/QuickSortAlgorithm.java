@@ -2,8 +2,9 @@ package com.alexo.springframework.basics.basic;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 @Qualifier("quicksort")
 public class QuickSortAlgorithm implements SortAlgorithm {
 

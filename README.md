@@ -120,3 +120,10 @@ IOC Container - the program/framework that provides dependency injection. Kind o
 In spring there are two implementations of IOC container
 1. Application Context - provides all features that are typically needed of an enterprise application (spring aop, internationalization I18n capabilities, WebApplicationContext for web application)
 2. Bean Factory - provide basic management of beans and wiring of dependencies (bean factory ++)
+
+
+**** Component Annotations
+@Component - generic component (use when youre not sure with what layer it belongs to)
+@Repository - encapsulating storate, retrieval and search behavior typically from a relational database (data layer)
+@Service - business service facade (business layer)
+@Controller - controller in MVC pattern( UI layer)
