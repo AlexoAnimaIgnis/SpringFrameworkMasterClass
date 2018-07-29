@@ -113,3 +113,10 @@ Spring supports most annotations
 - @Inject(@Autowired in spring)
 - @Named( @Component & @Qualifier in spring)
 - @Singleton (Defines a scope of singleton)
+
+
+**** IOC Container vs Application Context vs Bean Factory
+IOC Container - the program/framework that provides dependency injection. Kind of generic concept. (when to or how to create or autowire the dependency). It manages the beans.
+In spring there are two implementations of IOC container
+1. Application Context - provides all features that are typically needed of an enterprise application (spring aop, internationalization I18n capabilities, WebApplicationContext for web application)
+2. Bean Factory - provide basic management of beans and wiring of dependencies (bean factory ++)
