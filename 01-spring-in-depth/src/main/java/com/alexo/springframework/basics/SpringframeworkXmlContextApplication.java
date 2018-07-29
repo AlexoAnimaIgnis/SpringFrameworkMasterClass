@@ -1,24 +1,25 @@
 package com.alexo.springframework.basics;
 
 import com.alexo.springframework.basics.xml.XmlPersonDAO;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-@Configuration //way on defining a configuration without using spring boot
-@ComponentScan
 public class SpringframeworkXmlContextApplication {
+
+	private static Logger LOGGER = LoggerFactory.getLogger(SpringframeworkXmlContextApplication.class);
+
 
 	public static void main(String[] args) {
 
-		// ClassPathXmlApplicationContext - for loading the application context through xml
-		// that was defined in applicationContext.xml
 		try(ClassPathXmlApplicationContext applicationContext
 				= new ClassPathXmlApplicationContext("applicationContext.xml")) {
 
+			LOGGER.info("Bean loaded -> {}", (Object) applicationContext.getBeanDefinitionNames());
+
 			XmlPersonDAO xmlPersonDAO = applicationContext.getBean(XmlPersonDAO.class);
-			System.out.println(xmlPersonDAO);
-			System.out.println(xmlPersonDAO.getXmlJdbcConnection());
+			LOGGER.info("{}",xmlPersonDAO);
+			LOGGER.info("{}",xmlPersonDAO.getXmlJdbcConnection());
 
 		}
 
